@@ -15,7 +15,7 @@ jobs:
         with: 
           node-version: '18.x'
       - name: Install Dependencies
-        run: npm install express -save
+        run: npm install --no-optional
       - name: Deploy to Azure App Service
         uses: azure/webapps-deploy@v2
         with:
